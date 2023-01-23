@@ -2,34 +2,21 @@ package Parcial1;
 
 public class Cuadrado {
     public double lado;
-    public double perimetro;
-    public double diagonal;
-    public double area;
 
-    public Cuadrado(double ID)    {
-        this.lado = ID;
+    public Cuadrado(double lado)    {
+        this.lado = lado;
     }
-    public double GetPerimetro()    {
-        this.perimetro = 4 * lado;
-        return perimetro;
+    public Cuadrado()  {
+        this(177730);
     }
-    public double GetArea()    {
-        this.area = lado * lado;
-        return area;
+    public double Perimetro()   {
+        return lado*4;
     }
-    public double GetDiagonal()    {
-        this.diagonal = Math.sqrt(lado * lado * 2);
-        return diagonal;
+    public double Area()   {
+        return lado*lado;
     }
-    public void GetCaracteristicas()    {
-        this.perimetro = GetPerimetro();
-        this.area = GetArea();
-        this.diagonal = GetDiagonal();
-        System.out.println("ID: " + lado);
-        System.out.println("Lado: " + lado);
-        System.out.println("Perimetro: " + perimetro);
-        System.out.println("Area: " + area);
-        System.out.println("Diagonal: " + diagonal);
+    public double Diagonal()   {
+        return Math.sqrt(lado*lado*2);
     }
 }
 
