@@ -88,7 +88,7 @@ public class test {
                                 System.out.printf(test.vocalesMayuscula(frase) + "\n");
                                 break;
                             case 4:
-                                test.FizzBuzz(frase);
+                                test.FizzBuzz();
                                 break;
                             case 5:
                                 if (test.Palindromo(frase) == true)  {

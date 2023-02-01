@@ -31,9 +31,8 @@ public class examen {
         Frase = Frase.replace("u","U");
         return Frase;
    }
-   void FizzBuzz(String Frase)     {
-     int largo = Frase.length();
-     for (int i = 1; i <= largo; i++)   {
+   void FizzBuzz()     {
+     for (int i = 1; i <= 100; i++)   {
           if (i % 3 == 0 && i % 5 == 0)     {
                System.out.println("FizzBuzz");
           }
